@@ -2,31 +2,30 @@ import app from 'firebase/app';
 import 'firebase/auth';
 
 //Prod
-//<script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+//<script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
 // Initialize Firebase
 var prodConfig = {
-    apiKey: "AIzaSyA_UpAlU6OFP8C_14s7Oc1VwMdCDySG4O8",
-    authDomain: "wiki-prod.firebaseapp.com",
-    databaseURL: "https://wiki-prod.firebaseio.com",
-    projectId: "wiki-prod",
-    storageBucket: "wiki-prod.appspot.com",
-    messagingSenderId: "144106417596"
+    apiKey: "AIzaSyD0GA68BNwFQfoxJEpqKMm_QTC-nEHrMFg",
+    authDomain: "online-store-prod-bf17b.firebaseapp.com",
+    databaseURL: "https://online-store-prod-bf17b.firebaseio.com",
+    projectId: "online-store-prod-bf17b",
+    storageBucket: "online-store-prod-bf17b.appspot.com",
+    messagingSenderId: "88670805365"
 };
-//firebase.initializeApp(prodConfig);
-
+//firebase.initializeApp(config);
 
 //Dev
-//<script src="https://www.gstatic.com/firebasejs/5.8.5/firebase.js"></script>
+//<script src="https://www.gstatic.com/firebasejs/5.9.0/firebase.js"></script>
 // Initialize Firebase
 var devConfig = {
-    apiKey: "AIzaSyBTJhHRW60MqYY-mVSqX_UwPxVraZ1iVtc",
-    authDomain: "react-firebase-authentic-c4784.firebaseapp.com",
-    databaseURL: "https://react-firebase-authentic-c4784.firebaseio.com",
-    projectId: "react-firebase-authentic-c4784",
-    storageBucket: "react-firebase-authentic-c4784.appspot.com",
-    messagingSenderId: "809203984683"
+    apiKey: "AIzaSyCMlQTDZGkWCwZOP_1lbBwDk9IC579ZCqU",
+    authDomain: "online-store-ae640.firebaseapp.com",
+    databaseURL: "https://online-store-ae640.firebaseio.com",
+    projectId: "online-store-ae640",
+    storageBucket: "online-store-ae640.appspot.com",
+    messagingSenderId: "33828136039"
 };
-//firebase.initializeApp(devConfig);
+//firebase.initializeApp(config);
 
 const config =
     process.env.NODE_ENV === 'production' ? prodConfig : devConfig;
