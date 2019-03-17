@@ -3,6 +3,7 @@ import {
     MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBFormInline,
     MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem
 } from "mdbreact";
+import SignOutItem from '../SignOut';
 
 class NavbarPage extends Component {
     state = {
@@ -30,9 +31,7 @@ class NavbarPage extends Component {
                     <MDBNavItem>
                         <MDBNavLink to="/">Cart</MDBNavLink>
                     </MDBNavItem>
-                    <MDBNavItem>
-                        <MDBNavLink to="/">Sign Out</MDBNavLink>
-                    </MDBNavItem>
+                    <SignOutItem></SignOutItem>
                 </MDBNavbarNav>
             </MDBNavbar>
         );
