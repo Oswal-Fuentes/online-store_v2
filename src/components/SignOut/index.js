@@ -7,9 +7,13 @@ import { withFirebase } from '../Firebase';
 
 const SignOutButton = ({ firebase }) => (
   <MDBNavItem>
-    <MDBNavLink to="/" onClick={firebase.doSignOut}>Sign Out</MDBNavLink>
+    <MDBNavLink to="/" onClick={firebase.doSignOut} onClick={() => signout_alert()}>Sign Out</MDBNavLink>
   </MDBNavItem>
 );
+
+function signout_alert() {
+  alert("You're signed out now")
+}
 
 export default withFirebase(SignOutButton);
 
