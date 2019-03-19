@@ -1,5 +1,4 @@
 import React from 'react';
-import Navbar from '../Navigation/NavL'
 import Carousel from '../Carousel/Carousel'
 import Card from '../Card/Card'
 
@@ -8,7 +7,6 @@ import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
 
 const Landing = () => (
   <div>
-    <Navbar></Navbar>
     <Carousel></Carousel>
     <br></br>
     <MDBContainer>
@@ -59,8 +57,8 @@ const Landing = () => (
           <Card></Card>
         </MDBCol>
       </MDBRow>
-      
-      
+
+
 
 
     </MDBContainer>
