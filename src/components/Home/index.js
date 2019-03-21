@@ -1,5 +1,6 @@
 import React from 'react';
 import Carousel from '../Carousel/Carousel'
+import { withAuthorization } from '../Session';
 
 const Home = () => (
   <div>
@@ -7,4 +8,6 @@ const Home = () => (
   </div>
 );
 
-export default Home;
+const condition = authUser => !!authUser;
+
+export default withAuthorization(condition)(Home);
