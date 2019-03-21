@@ -1,8 +1,5 @@
 import React from 'react';
-import {
-  MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBFormInline,
-  MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem
-} from "mdbreact";
+import { MDBNavItem, MDBNavLink } from "mdbreact";
 import { withFirebase } from '../Firebase';
 
 const SignOutButton = ({ firebase }) => (

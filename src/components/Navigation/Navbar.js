@@ -1,14 +1,19 @@
-import React, { Component } from "react";
+import React from "react";
 import {
-    MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBNavbarToggler, MDBCollapse, MDBFormInline,
-    MDBDropdown, MDBDropdownToggle, MDBDropdownMenu, MDBDropdownItem
+    MDBNavbar, MDBNavbarBrand, MDBNavbarNav, MDBNavItem, MDBNavLink, MDBFormInline
 } from "mdbreact";
-import { Link } from 'react-router-dom';
 import * as ROUTES from '../../constants/routes';
 import SignOutItem from '../SignOut';
+import { AuthUserContext } from '../Session';
 
-const NavbarPage = ({ authUser }) => (
-    <div>{authUser ? <NavigationAuth /> : <NavigationNonAuth />}</div>
+const NavbarPage = () => (
+    <div>
+        <AuthUserContext.Consumer>
+            {authUser =>
+                authUser ? <NavigationAuth /> : <NavigationNonAuth />
+            }
+        </AuthUserContext.Consumer>
+    </div>
 );
 
 const NavigationAuth = () => (
