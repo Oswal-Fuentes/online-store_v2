@@ -29,9 +29,6 @@ const NavigationAuth = () => (
             </MDBFormInline>
         </MDBNavbarNav>
         <MDBNavbarNav right>
-            <MDBNavItem>
-                <MDBNavLink to="/">Cart</MDBNavLink>
-            </MDBNavItem>
             <SignOutItem></SignOutItem>
         </MDBNavbarNav>
     </MDBNavbar>

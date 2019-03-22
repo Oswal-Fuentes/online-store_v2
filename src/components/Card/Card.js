@@ -26,6 +26,4 @@ class Card extends Component {
     }
 }
 
-// onClick={() => this.props.removeItem(id)}
-
 export default Card;

@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Carousel from '../Carousel/Carousel'
 import Card from '../Card/Card'
 import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
+import * as ROUTES from '../../constants/routes';
+
 //import './index.css';
 
 class Landing extends Component {
@@ -98,8 +100,7 @@ class Landing extends Component {
   }
 
   removeItem(id) {
-    alert("Thanks for your purchase!")
-    this.setState({ item: this.state.item.filter(item => item.id !== id) });
+    this.props.history.push(ROUTES.HOME);
   }
 
   render() {
