@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { MDBBtn, MDBCard, MDBCardBody, MDBCardImage, MDBCardTitle, MDBCardText, MDBCol } from 'mdbreact';
+import { withAuthorization } from '../Session';
 
 class Card extends Component {
     constructor(props) {
@@ -17,12 +18,14 @@ class Card extends Component {
                             {description}
                             <br></br>
                             {price}</MDBCardText>
-                        <MDBBtn href="#">Buy</MDBBtn>
+                        <MDBBtn onClick={() => this.props.removeItem(id)}>Buy</MDBBtn>
                     </MDBCardBody>
                 </MDBCard>
             </MDBCol>
         )
     }
 }
+
+// onClick={() => this.props.removeItem(id)}
 
 export default Card;
