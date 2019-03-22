@@ -8,60 +8,6 @@ import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
 const Landing = () => (
   <div>
     <Carousel></Carousel>
-    <br></br>
-    <MDBContainer>
-      <MDBRow>
-        <MDBCol md="4">
-          <Card></Card>
-        </MDBCol>
-        <MDBCol md="4">
-          <Card></Card>
-        </MDBCol>
-        <MDBCol md="4">
-          <Card></Card>
-        </MDBCol>
-      </MDBRow>
-      <br></br>
-      <MDBRow>
-        <MDBCol md="4">
-          <Card></Card>
-        </MDBCol>
-        <MDBCol md="4">
-          <Card></Card>
-        </MDBCol>
-        <MDBCol md="4">
-          <Card></Card>
-        </MDBCol>
-      </MDBRow>
-      <br></br>
-      <MDBRow>
-        <MDBCol md="4">
-          <Card></Card>
-        </MDBCol>
-        <MDBCol md="4">
-          <Card></Card>
-        </MDBCol>
-        <MDBCol md="4">
-          <Card></Card>
-        </MDBCol>
-      </MDBRow>
-      <br></br>
-      <MDBRow>
-        <MDBCol md="4">
-          <Card></Card>
-        </MDBCol>
-        <MDBCol md="4">
-          <Card></Card>
-        </MDBCol>
-        <MDBCol md="4">
-          <Card></Card>
-        </MDBCol>
-      </MDBRow>
-
-
-
-
-    </MDBContainer>
   </div>
 );
 
